@@ -145,14 +145,14 @@ public class PunnetSquare2X2Frame extends JFrame implements ActionListener {
 			allele3 = String.valueOf(parent2a1.getText());
 			allele4 = String.valueOf(parent2a2.getText());
 			
-			if (allele3 == dominantAllele) {
+			if (allele3.equals(dominantAllele)) {
 				phenotype1 = new StringBuilder().append(allele3).append(allele1).toString();
 				phenotype3 = new StringBuilder().append(allele3).append(allele2).toString();
 			} else {
 				phenotype1 = new StringBuilder().append(allele1).append(allele3).toString();
 				phenotype3 = new StringBuilder().append(allele2).append(allele3).toString();
 			}
-			if (allele4 == dominantAllele) {
+			if (allele4.equals(dominantAllele)) {
 				phenotype2 = new StringBuilder().append(allele4).append(allele1).toString();
 				phenotype4 = new StringBuilder().append(allele4).append(allele2).toString();
 
@@ -160,14 +160,14 @@ public class PunnetSquare2X2Frame extends JFrame implements ActionListener {
 				phenotype2 = new StringBuilder().append(allele1).append(allele4).toString();
 				phenotype4 = new StringBuilder().append(allele2).append(allele4).toString();
 			}
-			if (allele2 == dominantAllele) {
+			if (allele2.equals(dominantAllele)) {
 				phenotype1 = new StringBuilder().append(allele1).append(allele3).toString();
 				phenotype3 = new StringBuilder().append(allele1).append(allele3).toString();
 			} else {
 				phenotype1 = new StringBuilder().append(allele3).append(allele1).toString();
 				phenotype3 = new StringBuilder().append(allele3).append(allele2).toString();
 			}
-			if (allele1 == dominantAllele) {
+			if (allele1.equals(dominantAllele)) {
 				phenotype2 = new StringBuilder().append(allele1).append(allele4).toString();
 				phenotype4 = new StringBuilder().append(allele2).append(allele4).toString();
 			} else {
